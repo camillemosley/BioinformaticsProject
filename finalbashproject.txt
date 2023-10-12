@@ -1,0 +1,57 @@
+# Caroline Daniher, Temitope Kassim, Joshua Sobo-Ogunrinde
+# To start, we are combining all of the hsp70 gene reference sequences to a single hsp70 reference sequence file.
+for file in ref_sequences/hsp70gene_*.fasta
+do
+   cat $file >> allRefSeqhsp70.fasta
+done
+
+# Using the muscle and hmm build, we are taking the large hsp70 reference sequence file and creating multiple hsp70 gene sequence alignments. We are then building an HMM profile.
+#The HMM profile is made from the hsp70 gene multiple sequence alignment.
+~/Private/Biocomputing/Tools/bin/muscle -align allRefSeqhsp70.fasta -output alignedRefSeqhsp70gene
+~/Private/Biocomputing/Tools/bin/hmmbuild sequenceshsp70.hmm alignedRefSeqhsp70gene
+
+# We do the same thing with the mcrA gene, where we  are combining all of the mcrA gene reference sequences to a single mcrA reference sequence file.
+for file in ref_sequences/mcrAgene_*.fasta
+do
+   cat $file >> allRefSeqmcrA.fasta
+done
+
+# Using the muscle and hmm build, we are taking the large mcrA reference sequence file and creating multiple mcrA gene sequence alignments. We are then building an HMM profile.     
+#The HMM profile is made from the mcrA gene multiple sequence alignment. This is the same as above except we are now doing it for mcrA.
+~/Private/Biocomputing/Tools/bin/muscle -align allRefSeqmcrA.fasta -output alignedRefSeqmcrAgene
+~/Private/Biocomputing/Tools/bin/hmmbuild sequencesmcrA.hmm alignedRefSeqmcrAgene
+
+# For each proteome in the proteomes directory, we are defining and the variable "base" and taking the base name of the file for simplicity.
+# Then, we are adding that base name to an all_proteomes csv file.
+# In each iteration for each file (or base), we use hmm search to identify hsp70 sequences in each proteome file using sequenceshsp70.hmm.
+# We will put the results in a specific hsp70 output that is linked to the base. We repeat this process again but for the mcrA gene.
+# At this point in the for loop, we call out the outputs for hsp70, and then edit them to disclude all lines that have "#", since we are only looking for WP. 
+# Now, with only the WP lines, we count the number of WP lines in each genomehsp70_${base}.output and put that result in the genomehsp70_final.csv.
+# We do the same thing for mcrA by taking each genomemcrA_${base}.output, making the edits, and then adding it to genomemcrA_final.csv.
+# Now, we have two csv files that show the number of matches in each proteome.
+for file in proteomes/*.fasta
+do
+base=$(basename $file .fasta)
+echo $base >> all_proteomes.csv
+~/Private/Biocomputing/Tools/bin/hmmsearch --tblout genomehsp70_${base}.output sequenceshsp70.hmm $file
+~/Private/Biocomputing/Tools/bin/hmmsearch --tblout genomemcrA_${base}.output sequencesmcrA.hmm $file
+cat genomehsp70_${base}.output | grep -v "#" | wc -l >> genomehsp70_final.csv
+cat genomemcrA_${base}.output | grep -v "#" | wc -l >> genomemcrA_final.csv
+done
+
+# The code below is to clear up the directory. Having produced multiple base outputs for mcrA and hsp70, two directories were made to put the results in those directories instead.
+# That way, BioinformaticsProject is cleared up of all the individual sets of data.
+mkdir hsp70_outputs
+mv genomehsp70_*.output hsp70_outputs
+mkdir mcrA_outputs
+mv genomemcrA_*.output mcrA_outputs
+
+# Now, we need to make a table with the final results. We create titles for each column in the genome_final.csv files. Then, we pasted the results from the all_proteomes.csv, 
+# genomehsp70_final.csv, and genomemcrA_final.csv into the genome_final.csv. This shows all the matches for hsp70 and mcrA for each proteome.
+echo "Proteome,HSP70,mcrA" > genome_final.csv
+paste -d , all_proteomes.csv genomehsp70_final.csv genomemcrA_final.csv >> genome_final.csv
+cat genome_final.csv
+
+# To identify the candidate pH-resistant methanogens, we need to identify proteomes with both the mcrA gene and the hsp70 gene. The code below shows the siginificant proteomes.
+echo "Here are the proteomes that are candidate pH-resistant methanogens. They have the hsp70 gene as well as the mcrA gene." > picked_genomes.txt
+cat genome_final.csv | sort -t , -k2,2 -r | grep -v ",0" >> picked_genomes.txt
