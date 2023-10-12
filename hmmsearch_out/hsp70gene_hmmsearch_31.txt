@@ -1,0 +1,20 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_053549228.1       -          hsp70gene_aligned    -           2.3e-283  938.7  23.8  1.2e-280  929.7  23.8   2.0   1   1   0   1   1   1   1 molecular chaperone DnaK 
+WP_053550046.1       -          hsp70gene_aligned    -            1.7e-12   44.0   5.7   7.1e-12   42.0   5.7   1.9   1   1   0   1   1   1   1 rod shape-determining protein 
+WP_053550968.1       -          hsp70gene_aligned    -            0.00065   15.7   0.3    0.0078   12.1   0.1   2.2   1   1   1   2   2   2   1 pilus assembly protein PilM 
+WP_053549249.1       -          hsp70gene_aligned    -             0.0024   13.8   0.2     0.096    8.5   0.0   2.0   2   0   0   2   2   2   2 ketoacyl-ACP synthase III 
+WP_053551643.1       -          hsp70gene_aligned    -             0.0024   13.8   0.7    0.0024   13.8   0.7   2.6   3   1   0   3   3   3   1 cell division protein FtsA 
+WP_053550303.1       -          hsp70gene_aligned    -             0.0079   12.1   0.1     0.012   11.5   0.1   1.2   1   0   0   1   1   1   1 4-hydroxy-3-methylbut-2-enyl diphosphate reductase 
+WP_082351077.1       -          hsp70gene_aligned    -               0.02   10.7   0.5      0.06    9.2   0.1   1.7   2   0   0   2   2   2   0 hypothetical protein 
+#
+# Program:         hmmsearch
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SEARCH
+# Query file:      ./hmmbuild_out/hsp70gene.hmm
+# Target file:     ./proteomes/proteome_31.fasta
+# Option settings: /afs/crc.nd.edu/user/m/mzarodn2/Private/Biocomputing/tools/hmmsearch --tblout ./hmmsearch_out/hsp70gene_hmmsearch_31.txt ./hmmbuild_out/hsp70gene.hmm ./proteomes/proteome_31.fasta 
+# Current dir:     /afs/crc.nd.edu/user/m/mzarodn2/Private/Biocomputing/BioinformaticsProject
+# Date:            Thu Oct 12 13:39:44 2023
+# [ok]

@@ -1,0 +1,15 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_004041481.1       -          hsp70gene_aligned    -                  0 1054.4  26.3         0 1054.3  26.3   1.0   1   0   0   1   1   1   1 MULTISPECIES: molecular chaperone DnaK 
+WP_004045222.1       -          hsp70gene_aligned    -                9.2    2.1  22.3        20    1.0  22.3   1.6   1   1   0   1   1   1   0 MULTISPECIES: prefoldin subunit alpha 
+#
+# Program:         hmmsearch
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SEARCH
+# Query file:      ./hmmbuild_out/hsp70gene.hmm
+# Target file:     ./proteomes/proteome_14.fasta
+# Option settings: /afs/crc.nd.edu/user/m/mzarodn2/Private/Biocomputing/tools/hmmsearch --tblout ./hmmsearch_out/hsp70gene_hmmsearch_14.txt ./hmmbuild_out/hsp70gene.hmm ./proteomes/proteome_14.fasta 
+# Current dir:     /afs/crc.nd.edu/user/m/mzarodn2/Private/Biocomputing/BioinformaticsProject
+# Date:            Thu Oct 12 13:39:43 2023
+# [ok]

@@ -1,0 +1,17 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_013362005.1       -          hsp70gene_aligned    -           7.3e-297  982.9  30.6  8.2e-297  982.7  30.6   1.0   1   0   0   1   1   1   1 molecular chaperone DnaK 
+WP_013360607.1       -          hsp70gene_aligned    -           4.4e-129  428.7   0.2  6.4e-129  428.1   0.2   1.1   1   0   0   1   1   1   1 molecular chaperone HscC 
+WP_013362571.1       -          hsp70gene_aligned    -            4.4e-12   42.2   6.4   1.9e-11   40.1   6.4   2.1   1   1   0   1   1   1   1 rod shape-determining protein 
+WP_013360481.1       -          hsp70gene_aligned    -            1.2e-08   30.9   2.3   0.00025   16.6   0.5   2.7   2   1   0   3   3   3   2 ethanolamine utilization protein EutJ 
+#
+# Program:         hmmsearch
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SEARCH
+# Query file:      ./hmmbuild_out/hsp70gene.hmm
+# Target file:     ./proteomes/proteome_32.fasta
+# Option settings: /afs/crc.nd.edu/user/m/mzarodn2/Private/Biocomputing/tools/hmmsearch --tblout ./hmmsearch_out/hsp70gene_hmmsearch_32.txt ./hmmbuild_out/hsp70gene.hmm ./proteomes/proteome_32.fasta 
+# Current dir:     /afs/crc.nd.edu/user/m/mzarodn2/Private/Biocomputing/BioinformaticsProject
+# Date:            Thu Oct 12 13:39:44 2023
+# [ok]
