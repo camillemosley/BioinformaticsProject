@@ -1,0 +1,11 @@
+
+for f in hsp70gene_*.fasta; do
+cat "$f" >> "hsp70combined.fasta";
+
+done
+
+for f in mcrAgene_*.fasta; do
+cat "$f" >> "mcrAgenecombined.fasta";
+
+done
+~/Private/Biocomputing/tools/muscle -align hsp70combined.fasta -output hsp70aligned.fasta
