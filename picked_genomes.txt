@@ -1,0 +1,18 @@
+Here are the proteomes that are candidate pH-resistant methanogens. They have the hsp70 gene as well as the mcrA gene.
+Proteome,HSP70,mcrA
+proteome_50,3,1
+proteome_45,3,1
+proteome_42,3,1
+proteome_03,3,1
+proteome_24,2,1
+proteome_23,2,2
+proteome_07,2,1
+proteome_05,2,1
+proteome_48,1,1
+proteome_44,1,1
+proteome_39,1,1
+proteome_38,1,1
+proteome_29,1,1
+proteome_19,1,2
+proteome_16,1,1
+proteome_15,1,1
