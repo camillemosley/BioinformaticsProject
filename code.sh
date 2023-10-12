@@ -5,7 +5,6 @@
 #$2: the directory of the tools
 #$3: the directory of the proteomes
 #$4: the output data name file
-#$out_name: name the final data file in txt format 
 
 touch all_hsp70.fasta
 touch all_mcrA.fasta
