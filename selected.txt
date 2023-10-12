@@ -1,0 +1,9 @@
+Proteomes hsp70 mcrA
+proteome21 5 0
+proteome25 5 0
+proteome8 5 0
+proteome11 6 0
+proteome12 6 0
+proteome31 7 0
+proteome18 8 0
+proteome22 8 0
