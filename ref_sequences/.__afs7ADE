@@ -1,0 +1,11 @@
+#Bash Informatics Project for Daniel Gatewood, Mae Czerwiec, and Mark Jantz
+#
+
+##usage: ls **path to directory of proteomes with variable characters to list all the proteomes we wish to search** | bash masterscript.sh **any number of regular expressions giving us the name of genes”
+list=$(cat)
+For GeneAlign in $@
+Do
+Cat $GeneAlign*.fasta > $GeneAlign.refseqs.fasta
+./muscle -align $GeneAlign.refseqs.fasta -output $GeneAlign.aligned.fasta
+./hmmbuild $GeneAlign.hmm $GeneAlign.aligned.fasta
+done
