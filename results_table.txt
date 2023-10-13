@@ -1,3 +1,4 @@
+name, mcrA, hsp70
 proteome_01, 0, 4
 proteome_02, 0, 2
 proteome_03, 1, 3

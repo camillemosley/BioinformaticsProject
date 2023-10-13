@@ -16,9 +16,9 @@ cat ref_sequences/hsp70*.fasta >> hsp70_seqs.fasta
 ../hmmbuild hsp70_build.hmm hsp70_aligned.fasta
 
 #make directory to store the search output for mcrA
+#iterate over all the proteomes, search for the mcrA gene, and store in mcrA_output directory
 mkdir mcrA_output
 
-#iterate over all the proteomes, search for the mcrA gene, and store in mcrA_output directory
 for file in proteomes/*.fasta
 do
   	file_basename=$(basename "$file" .fasta)
@@ -27,9 +27,9 @@ do
 done
 
 #make directory to store the search output for hsp70
+#iterate over all the proteomes, search for the hsp70 gene, and store in hsp70_output directory
 mkdir hsp70_output
 
-#iterate over all the proteomes, search for the hsp70 gene, and store in hsp70_output directory
 for file in proteomes/*.fasta
 do
   	file_basename=$(basename "$file" .fasta)
@@ -38,6 +38,7 @@ do
 done
 
 #store proteome name, number of mcrA genes, and number of hsp70 genes in table
+echo "name, mcrA, hsp70" > results_table.txt
 for file in proteomes/*.fasta
 do
 	proteome_name=$(basename "$file" .fasta)
@@ -51,6 +52,3 @@ do
 	#store information in table
 	echo "$proteome_name, $mcrA_count, $hsp70_count" >> results_table.txt
 done
-
-#create text file for proteomes of interest
-cat results_table.txt | grep -v " 0" | cut -d , -f 1 | sed 's/_/ /g' > proteomes_summary.txt
