@@ -1,0 +1,16 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_048118742.1       -          hsp70_aligned        -                  0 1099.5  23.8         0 1099.4  23.8   1.0   1   0   0   1   1   1   1 MULTISPECIES: molecular chaperone DnaK 
+WP_048116754.1       -          hsp70_aligned        -           7.7e-110  365.6   9.1  2.6e-100  334.1   3.7   2.0   2   0   0   2   2   2   2 MULTISPECIES: hypothetical protein 
+WP_048116752.1       -          hsp70_aligned        -             2e-106  354.3  13.5   2.8e-99  330.7   6.6   2.0   2   0   0   2   2   2   2 MULTISPECIES: Hsp70 family protein 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/workingfiles/hsp70.hmm
+# Target file:     /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/proteomes/proteome_03.fasta
+# Option settings: /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/tools/hmmsearch --tblout proteome03hsp70.txt /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/workingfiles/hsp70.hmm /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/proteomes/proteome_03.fasta 
+# Current dir:     /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/workingfiles/hsp70searches
+# Date:            Fri Oct 13 14:19:36 2023
+# [ok]

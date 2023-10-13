@@ -1,0 +1,17 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_013362005.1       -          hsp70_aligned        -           9.3e-298  985.8  30.7    1e-297  985.6  30.7   1.0   1   0   0   1   1   1   1 molecular chaperone DnaK 
+WP_013360607.1       -          hsp70_aligned        -           6.2e-129  428.2   0.2  9.1e-129  427.6   0.2   1.1   1   0   0   1   1   1   1 molecular chaperone HscC 
+WP_013362571.1       -          hsp70_aligned        -            4.2e-12   42.3   6.1   1.9e-11   40.2   6.1   2.1   1   1   0   1   1   1   1 rod shape-determining protein 
+WP_013360481.1       -          hsp70_aligned        -            4.6e-09   32.3   2.0   9.5e-05   18.0   0.6   2.7   2   1   1   3   3   3   2 ethanolamine utilization protein EutJ 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/workingfiles/hsp70.hmm
+# Target file:     /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/proteomes/proteome_01.fasta
+# Option settings: /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/tools/hmmsearch --tblout proteome01hsp70.txt /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/workingfiles/hsp70.hmm /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/proteomes/proteome_01.fasta 
+# Current dir:     /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/workingfiles/hsp70searches
+# Date:            Fri Oct 13 14:19:36 2023
+# [ok]

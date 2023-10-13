@@ -1,0 +1,13 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/workingfiles/mcrA.hmm
+# Target file:     /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/proteomes/proteome_41.fasta
+# Option settings: /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/tools/hmmsearch --tblout proteome41mcrA.txt /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/workingfiles/mcrA.hmm /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/proteomes/proteome_41.fasta 
+# Current dir:     /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/workingfiles/mcrAsearches
+# Date:            Fri Oct 13 14:19:36 2023
+# [ok]

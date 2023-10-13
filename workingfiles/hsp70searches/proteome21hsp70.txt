@@ -1,0 +1,18 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+NP_951095.1          -          hsp70_aligned        -           1.6e-285  945.9  20.4  7.7e-251  831.3  15.4   2.0   1   1   1   2   2   2   2 molecular chaperone DnaK 
+NP_953138.1          -          hsp70_aligned        -            1.9e-12   43.9   3.3   4.6e-12   42.6   3.3   1.9   1   1   0   1   1   1   1 rod shape-determining protein MreB 
+NP_951790.1          -          hsp70_aligned        -            7.5e-07   25.4   0.3   1.1e-06   24.8   0.3   1.2   1   0   0   1   1   1   1 rod shape-determining protein MreB 
+NP_951094.1          -          hsp70_aligned        -              0.013   11.4   1.0     0.016   11.1   1.0   1.1   1   0   0   1   1   1   0 heat shock protein GrpE 
+NP_951605.1          -          hsp70_aligned        -               0.65    5.8  10.3      0.97    5.2  10.3   1.2   1   0   0   1   1   1   0 DNA mismatch repair ATPase MutS-2 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/workingfiles/hsp70.hmm
+# Target file:     /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/proteomes/proteome_21.fasta
+# Option settings: /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/tools/hmmsearch --tblout proteome21hsp70.txt /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/workingfiles/hsp70.hmm /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/proteomes/proteome_21.fasta 
+# Current dir:     /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/workingfiles/hsp70searches
+# Date:            Fri Oct 13 14:19:37 2023
+# [ok]

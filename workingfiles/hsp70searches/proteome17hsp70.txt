@@ -1,0 +1,16 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_012941020.1       -          hsp70_aligned        -              0.069    8.1  17.2     0.074    8.0  17.2   1.0   1   0   0   1   1   1   0 ATP synthase archaeal subunit H 
+WP_012941024.1       -          hsp70_aligned        -               0.62    4.9  16.1       0.8    4.6  16.1   1.1   1   0   0   1   1   1   0 V-type ATP synthase subunit E 
+WP_012766394.1       -          hsp70_aligned        -                1.5    3.7  10.4       1.8    3.4  10.4   1.0   1   0   0   1   1   1   0 hypothetical protein 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/workingfiles/hsp70.hmm
+# Target file:     /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/proteomes/proteome_17.fasta
+# Option settings: /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/tools/hmmsearch --tblout proteome17hsp70.txt /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/workingfiles/hsp70.hmm /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/proteomes/proteome_17.fasta 
+# Current dir:     /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/workingfiles/hsp70searches
+# Date:            Fri Oct 13 14:19:37 2023
+# [ok]
