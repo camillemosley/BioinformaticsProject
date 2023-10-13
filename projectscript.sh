@@ -6,6 +6,7 @@ HMMBUILD_PATH=~/Private/Biocomputing/tools/hmmbuild
 HMMSEARCH_PATH=~/Private/Biocomputing/tools/hmmsearch
 REF_SEQ_PATH=~/Private/Biocomputing/BioinformaticsProject/ref_sequences
 PROTEOMES_PATH=~/Private/Biocomputing/BioinformaticsProject/proteomes
+PROJECT_PATH=~/Private/Biocomputing/BioinformaticsProject
 
 # Combine all of the reference sequences for hsp70 and mcrA
 cd $REF_SEQ_PATH
@@ -25,7 +26,7 @@ mv hsp70.hmm $PROTEOMES_PATH
 mv mcrA.hmm $PROTEOMES_PATH
 
 # Create a CSV file to store the results
-echo "Proteome, HSP70 Matches, McrA Matches" > $PROTEOMES_PATH/proteome_analysis_results.csv
+echo "Proteome, HSP70 Matches, McrA Matches" > $PROJECT_PATH/proteome_analysis_results.csv
 
 # hmmsearch for each of the proteomes
 cd $PROTEOMES_PATH
@@ -40,7 +41,7 @@ do
     mcrA_matches=$(grep -v "#" mcrA_results.txt | wc -l)
 
     # Append results to the CSV file
-    echo "$proteome, $hsp70_matches, $mcrA_matches" >> proteome_analysis_results.csv
+    echo "$proteome, $hsp70_matches, $mcrA_matches" >> $PROJECT_PATH/proteome_analysis_results.csv
 done
 
 # Clean up intermediate files
