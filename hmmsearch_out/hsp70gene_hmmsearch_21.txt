@@ -1,0 +1,18 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+NP_951095.1          -          hsp70gene_aligned    -           5.6e-285  944.1  20.2  1.6e-250  830.2  15.2   2.0   1   1   1   2   2   2   2 molecular chaperone DnaK 
+NP_953138.1          -          hsp70gene_aligned    -            1.7e-12   44.0   3.4   3.7e-12   42.9   3.4   1.8   1   1   0   1   1   1   1 rod shape-determining protein MreB 
+NP_951790.1          -          hsp70gene_aligned    -            9.3e-07   25.1   0.3   1.4e-06   24.5   0.3   1.2   1   0   0   1   1   1   1 rod shape-determining protein MreB 
+NP_951094.1          -          hsp70gene_aligned    -             0.0094   11.8   0.7     0.012   11.5   0.7   1.1   1   0   0   1   1   1   1 heat shock protein GrpE 
+NP_951605.1          -          hsp70gene_aligned    -               0.67    5.7  10.5         1    5.1  10.5   1.2   1   0   0   1   1   1   0 DNA mismatch repair ATPase MutS-2 
+#
+# Program:         hmmsearch
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SEARCH
+# Query file:      ./hmmbuild_out/hsp70gene.hmm
+# Target file:     ./proteomes/proteome_21.fasta
+# Option settings: /afs/crc.nd.edu/user/m/mzarodn2/Private/Biocomputing/tools/hmmsearch --tblout ./hmmsearch_out/hsp70gene_hmmsearch_21.txt ./hmmbuild_out/hsp70gene.hmm ./proteomes/proteome_21.fasta 
+# Current dir:     /afs/crc.nd.edu/user/m/mzarodn2/Private/Biocomputing/BioinformaticsProject
+# Date:            Thu Oct 12 13:39:44 2023
+# [ok]
