@@ -41,8 +41,8 @@ do
 	proteome_no=$(echo $i | cut -f3 -d/ | cut -f1 -d. | cut -f2 -d_)
 	prefix=$(echo $i | cut -f3 -d/ | cut -f1 -d.)
 
-	/afs/crc.nd.edu/user/m/mzarodn2/Private/Biocomputing/tools/hmmsearch --tblout "./hmmsearch_out/mcrAgene_hmmsearch_${proteome_no}.txt" ./hmmbuild_out/mcrAgene.hmm "$i"
-	/afs/crc.nd.edu/user/m/mzarodn2/Private/Biocomputing/tools/hmmsearch --tblout "./hmmsearch_out/hsp70gene_hmmsearch_${proteome_no}.txt" ./hmmbuild_out/hsp70gene.hmm "$i"
+	${TOOLS_PATH}/hmmsearch --tblout "./hmmsearch_out/mcrAgene_hmmsearch_${proteome_no}.txt" ./hmmbuild_out/mcrAgene.hmm "$i"
+	${TOOLS_PATH}/hmmsearch --tblout "./hmmsearch_out/hsp70gene_hmmsearch_${proteome_no}.txt" ./hmmbuild_out/hsp70gene.hmm "$i"
 
 	hsp70_count=$(grep -vc "^#" "./hmmsearch_out/hsp70gene_hmmsearch_${proteome_no}.txt")
 	mcrA_count=$(grep -vc "^#" "./hmmsearch_out/mcrAgene_hmmsearch_${proteome_no}.txt")
