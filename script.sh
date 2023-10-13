@@ -53,7 +53,7 @@ do
 done
 
 ## 8) creating a file of potential methanogens
-cat summary.txt | grep -wv "0" | sort -t' ' -k3,3nr >> methanogens.txt
+cat summary.txt | grep -wv "0" | sort -t' ' -k3,3nr -k1,1 >> methanogens.txt
 
 ## 9) moving the summary.txt and methanogens.txt files
 mv summary.txt methanogens.txt ..
