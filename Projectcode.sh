@@ -28,4 +28,5 @@ done
 
 
 #the following code provides a list of target genes
-cat finalgenecount.csv | grep -v -E ",0" > proteomesofinterest.csv
+echo "The following proteomes each have at least 1 hsp70 gene and at least 1 mcrA gene and would be good candidates for further study. The first number lists the number of hsp70 genes and the second lists the number of mcrA genes" > proteomesofinterest.txt
+cat finalgenecount.csv | grep -v -E ",0" | tr "," " " >> proteomesofinterest.txt

@@ -1,0 +1,18 @@
+The following proteomes each have at least 1 hsp70 gene and at least 1 mcrA gene and would be good candidates for further study. The first number lists the number of hsp70 genes and the second lists the number of mcrA genes
+proteome num of hsp num of mcrA
+proteome_03.fasta 3 1
+proteome_05.fasta 2 1
+proteome_07.fasta 2 1
+proteome_15.fasta 1 1
+proteome_16.fasta 1 1
+proteome_19.fasta 1 2
+proteome_23.fasta 2 2
+proteome_24.fasta 2 1
+proteome_29.fasta 1 1
+proteome_38.fasta 1 1
+proteome_39.fasta 1 1
+proteome_42.fasta 3 1
+proteome_44.fasta 1 1
+proteome_45.fasta 3 1
+proteome_48.fasta 1 1
+proteome_50.fasta 3 1
