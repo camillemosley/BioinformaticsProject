@@ -1,15 +1,15 @@
 #                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
 # target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
 #------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
-WP_011954235.1       -          alignment_mcrAgenes  -                  0 1058.6   2.1         0 1058.4   2.1   1.0   1   0   0   1   1   1   1 MULTISPECIES: coenzyme-B sulfoethylthiotransferase subunit alpha 
-WP_011954158.1       -          alignment_mcrAgenes  -                  0 1015.8   0.6         0 1015.7   0.6   1.0   1   0   0   1   1   1   1 MULTISPECIES: coenzyme-B sulfoethylthiotransferase subunit alpha 
+WP_011954292.1       -          alignment_hsp70gene  -           2.4e-299  990.5  30.7    3e-299  990.2  30.7   1.0   1   0   0   1   1   1   1 molecular chaperone DnaK 
+WP_004032955.1       -          alignment_hsp70gene  -              8e-16   54.0  10.7   2.7e-15   52.3  10.7   1.8   1   1   0   1   1   1   1 MULTISPECIES: rod shape-determining protein 
 #
 # Program:         hmmsearch
 # Version:         3.4 (Aug 2023)
 # Pipeline mode:   SEARCH
-# Query file:      BuildForhsp70.fasta
+# Query file:      BuildFor_hsp70.fasta
 # Target file:     proteome_23.fasta
-# Option settings: /afs/crc.nd.edu/user/d/dcervera/Private/Biocomputing/Tools/hmmsearch --tblout SearchOut_hsp70_23.fasta BuildForhsp70.fasta proteome_23.fasta 
+# Option settings: /afs/crc.nd.edu/user/d/dcervera/Private/Biocomputing/Tools/hmmsearch --tblout SearchOut_hsp70_23.fasta BuildFor_hsp70.fasta proteome_23.fasta 
 # Current dir:     /afs/crc.nd.edu/user/d/dcervera/Private/Biocomputing/BioinformaticsProject/proteomes
-# Date:            Thu Oct 12 16:04:01 2023
+# Date:            Fri Oct 13 10:07:47 2023
 # [ok]

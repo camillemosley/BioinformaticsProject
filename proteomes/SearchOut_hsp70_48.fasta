@@ -1,14 +1,14 @@
 #                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
 # target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
 #------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
-WP_012035370.1       -          alignment_mcrAgenes  -                  0 1064.3   3.5         0 1064.1   3.5   1.0   1   0   0   1   1   1   1 coenzyme-B sulfoethylthiotransferase subunit alpha 
+WP_012037073.1       -          alignment_hsp70gene  -                  0 1044.7  25.8         0 1044.5  25.8   1.0   1   0   0   1   1   1   1 molecular chaperone DnaK 
 #
 # Program:         hmmsearch
 # Version:         3.4 (Aug 2023)
 # Pipeline mode:   SEARCH
-# Query file:      BuildForhsp70.fasta
+# Query file:      BuildFor_hsp70.fasta
 # Target file:     proteome_48.fasta
-# Option settings: /afs/crc.nd.edu/user/d/dcervera/Private/Biocomputing/Tools/hmmsearch --tblout SearchOut_hsp70_48.fasta BuildForhsp70.fasta proteome_48.fasta 
+# Option settings: /afs/crc.nd.edu/user/d/dcervera/Private/Biocomputing/Tools/hmmsearch --tblout SearchOut_hsp70_48.fasta BuildFor_hsp70.fasta proteome_48.fasta 
 # Current dir:     /afs/crc.nd.edu/user/d/dcervera/Private/Biocomputing/BioinformaticsProject/proteomes
-# Date:            Thu Oct 12 16:04:02 2023
+# Date:            Fri Oct 13 10:07:49 2023
 # [ok]

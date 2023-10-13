@@ -1,13 +1,15 @@
 #                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
 # target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
 #------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_010902322.1       -          alignment_hsp70gene  -                  0 1043.8  31.8         0 1043.6  31.8   1.0   1   0   0   1   1   1   1 molecular chaperone DnaK 
+WP_010902986.1       -          alignment_hsp70gene  -              0.018   10.4   0.8     0.026    9.9   0.8   1.1   1   0   0   1   1   1   0 endonuclease 
 #
 # Program:         hmmsearch
 # Version:         3.4 (Aug 2023)
 # Pipeline mode:   SEARCH
-# Query file:      BuildForhsp70.fasta
+# Query file:      BuildFor_hsp70.fasta
 # Target file:     proteome_47.fasta
-# Option settings: /afs/crc.nd.edu/user/d/dcervera/Private/Biocomputing/Tools/hmmsearch --tblout SearchOut_hsp70_47.fasta BuildForhsp70.fasta proteome_47.fasta 
+# Option settings: /afs/crc.nd.edu/user/d/dcervera/Private/Biocomputing/Tools/hmmsearch --tblout SearchOut_hsp70_47.fasta BuildFor_hsp70.fasta proteome_47.fasta 
 # Current dir:     /afs/crc.nd.edu/user/d/dcervera/Private/Biocomputing/BioinformaticsProject/proteomes
-# Date:            Thu Oct 12 16:04:02 2023
+# Date:            Fri Oct 13 10:07:49 2023
 # [ok]

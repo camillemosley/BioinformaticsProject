@@ -1,0 +1,18 @@
+Below are the Proteomes are the best candidates for the growth experiments, because they all have at least one mcrA gene
+(making it methanogenic) and the have multiple hsp70 genes which indicates pH-resistant. 
+proteome_03 
+proteome_05 
+proteome_07
+proteome_15 
+proteome_16 
+proteome_24 
+proteome_29
+proteome_38 
+proteome_39 
+proteome_42
+proteome_44
+proteome_45 
+proteome_48 
+proteome_50 
+proteome_19 
+proteome_23 
