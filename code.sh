@@ -1,13 +1,15 @@
-###		Example usage: bash script.sh /afs/crc.nd.edu/user/m/mzarodn2/Private/Biocomputing/BioinformaticsProject ref_sequences proteomes
+###		Example usage: bash script.sh /afs/crc.nd.edu/user/m/mzarodn2/Private/Biocomputing/BioinformaticsProject ref_sequences proteomes /afs/crc.nd.edu/user/m/mzarodn2/Private/Biocomputing/tools
 
 ### 	Arguments
 #		WD_PATH – path to working directory
 #		REFSEQ_DIRNAME – directory containing reference sequences; must be a subdirectory in WD_PATH
 #		PROTEOME_DIRNAME – directory containing proteome sequences; must be a subdirectory in WD_PATH
+#		TOOLS_PATH – directory where muscle and hmmer are installed
 
 WD_PATH=$1
 REFSEQ_DIRNAME=$2
 PROTEOME_DIRNAME=$3
+TOOLS_PATH=$4
 
 # Concatenating all reference sequences into one fasta file
 cd ${WD_PATH}/${REFSEQ_DIRNAME}
@@ -15,11 +17,11 @@ cat mcrAgene_*.fasta > mcrAgene.fasta
 cat hsp70gene_*.fasta > hsp70gene.fasta
 
 # Muscle
-/afs/crc.nd.edu/user/m/mzarodn2/Private/Biocomputing/tools/muscle/muscle3.8.31_i86linux64 \
+${TOOLS_PATH}/muscle/muscle3.8.31_i86linux64 \
 		-in mcrAgene.fasta \
 		-out mcrAgene_aligned.fasta
 
-/afs/crc.nd.edu/user/m/mzarodn2/Private/Biocomputing/tools/muscle/muscle3.8.31_i86linux64  \
+${TOOLS_PATH}/muscle/muscle3.8.31_i86linux64  \
 		-in hsp70gene.fasta \
 		-out hsp70gene_aligned.fasta
 
@@ -27,8 +29,8 @@ cd ../
 
 # Hmmbuild
 mkdir hmmbuild_out
-/afs/crc.nd.edu/user/m/mzarodn2/Private/Biocomputing/tools/hmmbuild ./hmmer_out/mcrAgene.hmm ./${REFSEQ_DIRNAME}/mcrAgene_aligned.fasta
-/afs/crc.nd.edu/user/m/mzarodn2/Private/Biocomputing/tools/hmmbuild ./hmmer_out/hsp70gene.hmm ./${REFSEQ_DIRNAME}/hsp70gene_aligned.fasta
+${TOOLS_PATH}/hmmbuild ./hmmer_out/mcrAgene.hmm ./${REFSEQ_DIRNAME}/mcrAgene_aligned.fasta
+${TOOLS_PATH}/hmmbuild ./hmmer_out/hsp70gene.hmm ./${REFSEQ_DIRNAME}/hsp70gene_aligned.fasta
 
 # Hmmsearch
 mkdir hmmsearch_out
