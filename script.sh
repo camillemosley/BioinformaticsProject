@@ -34,7 +34,7 @@ do
 	/afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/tools/hmmsearch --tblout "proteome"$numb"mcrA.txt" $1/workingfiles/mcrA.hmm $file
 done
 
-cd $1/working
+cd $1/workingfiles
 mkdir hsp70searches
 cd hsp70searches
 for file in $1/proteomes/*.fasta;
