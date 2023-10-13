@@ -32,7 +32,8 @@ mkdir hmmbuild_out
 
 # Hmmsearch
 mkdir hmmsearch_out
-rm hits_table.txt
+echo "proteome,mcrA_count,hsp70_count" > hits_table.txt
+
 for i in "./${PROTEOME_DIRNAME}/proteome_"*".fasta"
 do
 	proteome_no=$(echo $i | cut -f3 -d/ | cut -f1 -d. | cut -f2 -d_)
@@ -46,4 +47,4 @@ do
 	echo $prefix","$mcrA_count","$hsp70_count >> hits_table.txt
 done
 
-grep -wv 0 hits_table.txt | sort -rnk3 > candidate_methanogens.txt
+cat hits_table.txt | tail -n+2 | grep -wv 0 hits_table.txt | sort -rnk3 > candidate_methanogens.txt
