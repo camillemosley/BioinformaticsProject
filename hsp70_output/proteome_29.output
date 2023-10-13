@@ -1,0 +1,14 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_013100223.1       -          hsp70_aligned        -             0.0087   10.7   0.0      0.04    8.6   0.0   1.9   2   0   0   2   2   2   1 NurA domain protein 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      hsp70_build.hmm
+# Target file:     proteomes/proteome_29.fasta
+# Option settings: ../hmmsearch --tblout hsp70_output/proteome_29.output hsp70_build.hmm proteomes/proteome_29.fasta 
+# Current dir:     /afs/crc.nd.edu/user/l/llatimer/Private/Biocomputing/Tools/BioinformaticsProject
+# Date:            Fri Oct 13 12:05:11 2023
+# [ok]

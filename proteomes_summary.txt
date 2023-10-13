@@ -1,0 +1,16 @@
+proteome 03
+proteome 05
+proteome 07
+proteome 15
+proteome 16
+proteome 19
+proteome 23
+proteome 24
+proteome 29
+proteome 38
+proteome 39
+proteome 42
+proteome 44
+proteome 45
+proteome 48
+proteome 50
