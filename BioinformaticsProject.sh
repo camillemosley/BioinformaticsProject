@@ -7,7 +7,7 @@ cat ref_sequences/mcrA*.fasta >> mcrA_seqs.fasta
 cat ref_sequences/hsp70*.fasta >> hsp70_seqs.fasta
 
 #align reference sequences in muscle
-#uses relative path for muscle assuming that the tools directory is one directory above current location
+#uses relative path assuming that the tools directory is one directory above current location, and that muscle is contained in tools
 ../muscle -align mcrA_seqs.fasta -output mcrA_aligned.fasta
 ../muscle -align hsp70_seqs.fasta -output hsp70_aligned.fasta
 
@@ -38,7 +38,7 @@ do
 done
 
 #store proteome name, number of mcrA genes, and number of hsp70 genes in table
-echo "name, mcrA, hsp70" > results_table.txt
+echo "name, mcrA, hsp70" > results_table.csv
 for file in proteomes/*.fasta
 do
 	proteome_name=$(basename "$file" .fasta)
@@ -50,5 +50,5 @@ do
 	hsp70_count=$(cat hsp70_output/${proteome_name}.output | grep -v "^#" | wc -l)
 
 	#store information in table
-	echo "$proteome_name, $mcrA_count, $hsp70_count" >> results_table.txt
+	echo "$proteome_name, $mcrA_count, $hsp70_count" >> results_table.csv
 done
