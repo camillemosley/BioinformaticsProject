@@ -6,9 +6,9 @@ WP_011033189.1       -          mcrA_aligned         -                  0 1120.6
 # Program:         hmmsearch
 # Version:         3.4 (Aug 2023)
 # Pipeline mode:   SEARCH
-# Query file:      mcrA.hmm
-# Target file:     ../proteomes/proteome_24.fasta
-# Option settings: ../../tools/hmmsearch --tblout proteome24mcrA.txt mcrA.hmm ../proteomes/proteome_24.fasta 
-# Current dir:     /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/workingfiles
-# Date:            Thu Oct 12 20:07:25 2023
+# Query file:      /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/workingfiles/mcrA.hmm
+# Target file:     /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/proteomes/proteome_24.fasta
+# Option settings: /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/tools/hmmsearch --tblout proteome24mcrA.txt /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/workingfiles/mcrA.hmm /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/proteomes/proteome_24.fasta 
+# Current dir:     /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/workingfiles/mcrAsearches
+# Date:            Fri Oct 13 14:06:47 2023
 # [ok]
