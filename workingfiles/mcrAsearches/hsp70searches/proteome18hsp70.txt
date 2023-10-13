@@ -17,5 +17,5 @@ WP_010077048.1       -          hsp70_aligned        -              0.016   11.4
 # Target file:     /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/proteomes/proteome_18.fasta
 # Option settings: /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/tools/hmmsearch --tblout proteome18hsp70.txt /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/workingfiles/hsp70.hmm /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/proteomes/proteome_18.fasta 
 # Current dir:     /afs/crc.nd.edu/user/a/ahansris/Private/Biocomputing/BioinformaticsProject/workingfiles/mcrAsearches/hsp70searches
-# Date:            Fri Oct 13 14:06:49 2023
+# Date:            Fri Oct 13 14:15:20 2023
 # [ok]

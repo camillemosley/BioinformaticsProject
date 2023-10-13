@@ -57,5 +57,6 @@ done
 ## 8) creating a file of potential methanogens
 cat summary.csv | grep -wv "0" | sort -t, -k3,3nr -k1,1n >> methanogens.csv
 
-## 9) moving the summary.txt and methanogens.txt files
-mv summary.csv methanogens.csv $1
+## 9) adding headers to summary.csv and methanogens.csv
+sed -i -e '1i"Proteome #","# of mcrA genes","# of hsp70 genes"' summary.csv
+sed -i -e '1i"Proteome #","# of mcrA genes","# of hsp70 genes"' methanogens.csv
