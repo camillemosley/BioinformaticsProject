@@ -53,4 +53,4 @@ do
 done
 
 ## 8) creating a file of potential methanogens
-grep -wv "0" >> methanogens.txt
+cat summary.txt | grep -wv "0" | sort -t' ' -k3,3nr >> methanogens.txt
