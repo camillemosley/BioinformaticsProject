@@ -49,5 +49,5 @@ do
 	echo $prefix","$mcrA_count","$hsp70_count >> hits_table.txt
 done
 
-echo "proteome,mcrA_count,hsp70_count" > hits_table.txt
-cat hits_table.txt | tail -n+2 | grep -wv 0 | sort -rnk3 > candidate_methanogens.txt
+echo "proteome,mcrA_count,hsp70_count" > candidate_methanogens.txt
+cat hits_table.txt | tail -n+2 | grep -wv 0 | sort -rnk3 >> candidate_methanogens.txt
