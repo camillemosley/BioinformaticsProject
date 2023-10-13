@@ -1,7 +1,9 @@
 #The Code for Daniel Gatewood, Mark Jantz, and Mae Czerwiec for the Bash Bioinformatics Project
 
 #Usage: ls proteomes | bash projectcode.sh "hsp" "mcrA"
-#Usage cont: the assumption is made that the individual gene sequences to be references are in a subdirectory titled ref_sequences and the proteome files to be references are in a subdirectory of the current working directory titled proteomes
+#Usage cont: the assumption is made that the individual gene sequences to be referenced 
+#are in a subdirectory titled ref_sequences and the proteome files to be referenced are 
+#in a subdirectory of the current working directory titled proteomes
 #Usage cont: it is also assumed that the muscle and hmm files are in a sister directory to the current working directory titled tools
 
 #This command makes a variable that lists all the protomes which need to be searched
