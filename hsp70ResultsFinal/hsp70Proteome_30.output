@@ -9,6 +9,6 @@ WP_062007832.1       -          aligned_combined_hsp70Agene -           4.2e-260
 # Query file:      hsp70.hmm
 # Target file:     ./proteomes/proteome_30.fasta
 # Option settings: ./hmmsearch --tblout hsp70Proteome_30.output hsp70.hmm ./proteomes/proteome_30.fasta 
-# Current dir:     /afs/crc.nd.edu/user/m/meleazar/Private/Biocomputing/BioinformaticsProject
-# Date:            Sat Oct 14 02:43:41 2023
+# Current dir:     /escnfs/home/meleazar/biocomputing/BioinformaticsProject
+# Date:            Sat Oct 14 03:26:38 2023
 # [ok]

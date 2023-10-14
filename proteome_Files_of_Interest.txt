@@ -1,0 +1,16 @@
+proteome_03.fasta |mcrA: 1 hsp70: 3
+proteome_05.fasta |mcrA: 1 hsp70: 2
+proteome_07.fasta |mcrA: 1 hsp70: 2
+proteome_15.fasta |mcrA: 1 hsp70: 1
+proteome_16.fasta |mcrA: 1 hsp70: 1
+proteome_19.fasta |mcrA: 2 hsp70: 1
+proteome_23.fasta |mcrA: 2 hsp70: 2
+proteome_24.fasta |mcrA: 1 hsp70: 2
+proteome_29.fasta |mcrA: 1 hsp70: 1
+proteome_38.fasta |mcrA: 1 hsp70: 1
+proteome_39.fasta |mcrA: 1 hsp70: 1
+proteome_42.fasta |mcrA: 1 hsp70: 3
+proteome_44.fasta |mcrA: 1 hsp70: 1
+proteome_45.fasta |mcrA: 1 hsp70: 3
+proteome_48.fasta |mcrA: 1 hsp70: 1
+proteome_50.fasta |mcrA: 1 hsp70: 3

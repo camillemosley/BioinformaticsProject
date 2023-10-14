@@ -8,6 +8,6 @@
 # Query file:      mcrAgene.hmm
 # Target file:     ./proteomes/proteome_01.fasta
 # Option settings: ./hmmsearch --tblout mcrAgeneProteome_01.output mcrAgene.hmm ./proteomes/proteome_01.fasta 
-# Current dir:     /afs/crc.nd.edu/user/m/meleazar/Private/Biocomputing/BioinformaticsProject
-# Date:            Sat Oct 14 02:41:44 2023
+# Current dir:     /escnfs/home/meleazar/biocomputing/BioinformaticsProject
+# Date:            Sat Oct 14 03:26:34 2023
 # [ok]
