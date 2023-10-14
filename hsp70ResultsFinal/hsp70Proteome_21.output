@@ -14,5 +14,5 @@ NP_951605.1          -          aligned_combined_hsp70Agene -               0.65
 # Target file:     ./proteomes/proteome_21.fasta
 # Option settings: ./hmmsearch --tblout hsp70Proteome_21.output hsp70.hmm ./proteomes/proteome_21.fasta 
 # Current dir:     /afs/crc.nd.edu/user/m/meleazar/Private/Biocomputing/BioinformaticsProject
-# Date:            Sat Oct 14 01:37:23 2023
+# Date:            Sat Oct 14 02:43:00 2023
 # [ok]

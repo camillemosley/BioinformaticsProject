@@ -58,32 +58,49 @@ table_func(){
 }
 
 
-# Set default values
-gene="mcrA"  # Default gene to process
-
-# Parse command line options
-while getopts "hm" opt; do
-  case $opt in
-    h)
+# Process command-line arguments
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    -h)
       show_usage
       ;;
-    a)
-      align_func
+    -a)
+      align=true
       ;;
-    m)
-      muscle_func
+    -m)
+      muscle=true
       ;;
-    b)
-      build_func
+    -b)
+      build=true
       ;;
-    \?)
-      echo "Invalid option: -$OPTARG"
+    -t)
+      generate_table=true
+      ;;
+    *)
+      echo "Invalid option: $1"
       show_usage
       ;;
   esac
+  shift
 done
 
-``
+# Call functions based on the selected options
+if $align; then
+  align_func
+fi
+
+if $muscle; then
+  muscle_func
+fi
+
+if $build; then
+  build_func
+fi
+
+if $generate_table; then
+  table_func
+fi
+
 # Before we even use muscle, we combine all the hsp70 and mcrA reference sequences into one file
 cat ref_sequences/mcrAgene_* > combined_mcrAgene.fasta
 cat ref_sequences/hsp70gene_* > combined_hsp70gene.fasta
