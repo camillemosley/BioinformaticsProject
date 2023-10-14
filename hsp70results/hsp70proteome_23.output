@@ -1,0 +1,15 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_011954292.1       -          hsp70aligned         -           2.4e-299  990.5  30.7    3e-299  990.2  30.7   1.0   1   0   0   1   1   1   1 molecular chaperone DnaK 
+WP_004032955.1       -          hsp70aligned         -              8e-16   54.0  10.7   2.7e-15   52.3  10.7   1.8   1   1   0   1   1   1   1 MULTISPECIES: rod shape-determining protein 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      hsp70.hmm
+# Target file:     ./proteomes/proteome_23.fasta
+# Option settings: ./hmmsearch --tblout hsp70proteome_23.output hsp70.hmm ./proteomes/proteome_23.fasta 
+# Current dir:     /afs/crc.nd.edu/user/a/apercell/Private/Biocomputing/Tools
+# Date:            Fri Oct 13 14:30:04 2023
+# [ok]

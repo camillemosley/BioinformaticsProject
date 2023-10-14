@@ -1,0 +1,14 @@
+#                                                                    --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name                accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------      -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_048120720.1       -          aligned_combined_mcrAgene -                  0 1113.3   2.6         0 1113.1   2.6   1.0   1   0   0   1   1   1   1 MULTISPECIES: coenzyme-B sulfoethylthiotransferase subunit alpha 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      mcrAgene.hmm
+# Target file:     ./proteomes/proteome_45.fasta
+# Option settings: ./hmmsearch --tblout mcrAgeneProteome_45.output mcrAgene.hmm ./proteomes/proteome_45.fasta 
+# Current dir:     /escnfs/home/meleazar/biocomputing/BioinformaticsProject
+# Date:            Sat Oct 14 03:26:39 2023
+# [ok]
