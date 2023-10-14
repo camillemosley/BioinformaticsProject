@@ -1,0 +1,15 @@
+#                                                                      --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name                  accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------        -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_010867429.1       -          aligned_combined_hsp70Agene -             0.0066   11.5   6.5    0.0082   11.2   6.5   1.1   1   0   0   1   1   1   1 transcriptional regulator 
+WP_010868356.1       -          aligned_combined_hsp70Agene -              0.013   10.5   3.5     0.014   10.4   3.5   1.1   1   0   0   1   1   1   0 hypothetical protein 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      hsp70.hmm
+# Target file:     ./proteomes/proteome_46.fasta
+# Option settings: ./hmmsearch --tblout hsp70Proteome_46.output hsp70.hmm ./proteomes/proteome_46.fasta 
+# Current dir:     /afs/crc.nd.edu/user/m/meleazar/Private/Biocomputing/BioinformaticsProject
+# Date:            Sat Oct 14 01:03:07 2023
+# [ok]

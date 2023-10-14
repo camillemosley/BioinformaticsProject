@@ -1,5 +1,5 @@
 HMMER3/f [3.4 | Aug 2023]
-NAME  mcrAgene_combAligned
+NAME  aligned_combined_mcrAgene
 LENG  555
 ALPH  amino
 RF    no
@@ -7,7 +7,7 @@ MM    no
 CONS  yes
 CS    no
 MAP   yes
-DATE  Fri Oct 13 14:07:58 2023
+DATE  Sat Oct 14 01:03:02 2023
 NSEQ  18
 EFFN  0.575684
 CKSUM 3632314348

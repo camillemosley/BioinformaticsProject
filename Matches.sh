@@ -1,3 +1,4 @@
+#!/bin/bash
 #usage : 
 #trying to combine all the know instances of mcrAgene and hsp70 found within the Proteomes files  
 # and how many in each file.
@@ -11,5 +12,5 @@ done
 for i in {1..50}
 do
         echo hsp70Proteome_$i.output
-        cat ./hsp70Results/hsp70Proteome_$i.output | grep -E "WP*" | wc -l
+        cat ./hsp70results/hsp70proteome_$i.output | grep -E "WP*" | wc -l
 done

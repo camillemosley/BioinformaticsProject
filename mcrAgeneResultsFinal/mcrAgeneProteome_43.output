@@ -1,0 +1,13 @@
+#                                                                    --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name                accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------      -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      mcrAgene.hmm
+# Target file:     ./proteomes/proteome_43.fasta
+# Option settings: ./hmmsearch --tblout mcrAgeneProteome_43.output mcrAgene.hmm ./proteomes/proteome_43.fasta 
+# Current dir:     /afs/crc.nd.edu/user/m/meleazar/Private/Biocomputing/BioinformaticsProject
+# Date:            Sat Oct 14 01:03:07 2023
+# [ok]

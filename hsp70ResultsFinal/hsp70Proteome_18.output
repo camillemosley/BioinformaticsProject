@@ -1,0 +1,21 @@
+#                                                                      --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name                  accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------        -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_010075966.1       -          aligned_combined_hsp70Agene -                  0 1013.6  32.6         0 1013.5  32.6   1.0   1   0   0   1   1   1   1 molecular chaperone DnaK 
+WP_010073455.1       -          aligned_combined_hsp70Agene -           4.8e-136  452.4   4.3  5.6e-136  452.2   4.3   1.0   1   0   0   1   1   1   1 molecular chaperone HscC 
+WP_010076109.1       -          aligned_combined_hsp70Agene -           7.5e-111  369.2   6.6  2.2e-103  344.6   0.5   2.2   2   0   0   2   2   2   2 Hsp70 family protein 
+WP_010076108.1       -          aligned_combined_hsp70Agene -            3.8e-88  294.2   5.3   4.7e-88  293.9   5.3   1.1   1   0   0   1   1   1   1 Hsp70 family protein 
+WP_010075827.1       -          aligned_combined_hsp70Agene -              3e-15   53.5  10.1   1.8e-14   50.9  10.1   2.2   1   1   0   1   1   1   1 rod shape-determining protein 
+WP_010076656.1       -          aligned_combined_hsp70Agene -            7.5e-15   52.1   7.0   6.1e-14   49.1   7.0   2.3   1   1   0   1   1   1   1 rod shape-determining protein 
+WP_010074858.1       -          aligned_combined_hsp70Agene -            0.00087   15.6   0.0    0.0059   12.8   0.0   2.0   2   0   0   2   2   2   1 xylulokinase 
+WP_010077048.1       -          aligned_combined_hsp70Agene -              0.016   11.4   2.7     0.016   11.4   0.4   1.7   1   1   1   2   2   2   0 DUF89 domain-containing protein 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      hsp70.hmm
+# Target file:     ./proteomes/proteome_18.fasta
+# Option settings: ./hmmsearch --tblout hsp70Proteome_18.output hsp70.hmm ./proteomes/proteome_18.fasta 
+# Current dir:     /afs/crc.nd.edu/user/m/meleazar/Private/Biocomputing/BioinformaticsProject
+# Date:            Sat Oct 14 01:03:05 2023
+# [ok]
