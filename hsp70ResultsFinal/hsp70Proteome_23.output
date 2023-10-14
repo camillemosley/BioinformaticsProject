@@ -11,5 +11,5 @@ WP_004032955.1       -          aligned_combined_hsp70Agene -              8e-16
 # Target file:     ./proteomes/proteome_23.fasta
 # Option settings: ./hmmsearch --tblout hsp70Proteome_23.output hsp70.hmm ./proteomes/proteome_23.fasta 
 # Current dir:     /afs/crc.nd.edu/user/m/meleazar/Private/Biocomputing/BioinformaticsProject
-# Date:            Sat Oct 14 01:03:05 2023
+# Date:            Sat Oct 14 01:37:24 2023
 # [ok]

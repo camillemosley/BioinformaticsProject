@@ -10,5 +10,5 @@ WP_012035370.1       -          aligned_combined_mcrAgene -                  0 1
 # Target file:     ./proteomes/proteome_39.fasta
 # Option settings: ./hmmsearch --tblout mcrAgeneProteome_39.output mcrAgene.hmm ./proteomes/proteome_39.fasta 
 # Current dir:     /afs/crc.nd.edu/user/m/meleazar/Private/Biocomputing/BioinformaticsProject
-# Date:            Sat Oct 14 01:03:07 2023
+# Date:            Sat Oct 14 01:37:25 2023
 # [ok]

@@ -9,5 +9,5 @@
 # Target file:     ./proteomes/proteome_33.fasta
 # Option settings: ./hmmsearch --tblout hsp70Proteome_33.output hsp70.hmm ./proteomes/proteome_33.fasta 
 # Current dir:     /afs/crc.nd.edu/user/m/meleazar/Private/Biocomputing/BioinformaticsProject
-# Date:            Sat Oct 14 01:03:06 2023
+# Date:            Sat Oct 14 01:37:25 2023
 # [ok]

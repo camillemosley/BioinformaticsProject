@@ -17,5 +17,5 @@ YP_003762961.1       -          aligned_combined_hsp70Agene -              0.094
 # Target file:     ./proteomes/proteome_22.fasta
 # Option settings: ./hmmsearch --tblout hsp70Proteome_22.output hsp70.hmm ./proteomes/proteome_22.fasta 
 # Current dir:     /afs/crc.nd.edu/user/m/meleazar/Private/Biocomputing/BioinformaticsProject
-# Date:            Sat Oct 14 01:03:05 2023
+# Date:            Sat Oct 14 01:37:24 2023
 # [ok]

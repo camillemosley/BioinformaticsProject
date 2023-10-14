@@ -7,10 +7,55 @@ show_usage() {
   echo "Usage: $0 [OPTIONS]"
   echo "Options:"
   echo "  -h  Display this help message"
+  echo "  -a Only align the sequences"
   echo "  -m Only use muscle to align ref_sequences"
+  echo "  -b Only use hmmbuild to build sequences"
+  echo "  -t Only generate table, assuming everything else has been done"
+  echo "Flexible to inputs, yes..."
   exit 1
 }
 
+align_func(){
+  # Before we even use muscle, we combine all the hsp70 and mcrA reference sequences into one file
+  cat ref_sequences/mcrAgene_* > combined_mcrAgene.fasta
+  cat ref_sequences/hsp70gene_* > combined_hsp70gene.fasta
+
+}
+muscle_func(){
+  # Muscle alignment for mcrA and hsp70
+  ./muscle -align combined_mcrAgene.fasta -output aligned_combined_mcrAgene.fasta
+  ./muscle -align combined_hsp70gene.fasta -output aligned_combined_hsp70Agene.fasta
+}
+
+build_func(){
+  # hmmbuild for mcrA and hsp70 
+  ./hmmbuild mcrAgene.hmm aligned_combined_mcrAgene.fasta
+  ./hmmbuild hsp70.hmm aligned_combined_hsp70Agene.fasta
+}
+table_func(){
+  # Initialize Table
+  echo "Proteome Name              |  mcrA Gene Matches   |  hsp70 Gene Matches   |" >> table.txt 
+  echo "----------------------------------------------------------------------------" >> table.txt
+
+
+  # for loop that does hmmsearch for both mcrA and hsp70
+  for i in {01..50}; do 
+      # generate the table of matched genes for mcrA
+      ./hmmsearch --tblout mcrAgeneProteome_$i.output mcrAgene.hmm ./proteomes/proteome_$i.fasta > /dev/null
+      mv mcrAgeneProteome_$i.output mcrAgeneResultsFinal/ 
+
+      
+      # generate the table of matched genes for hsp70
+      ./hmmsearch --tblout hsp70Proteome_$i.output hsp70.hmm ./proteomes/proteome_$i.fasta > /dev/null
+      mv hsp70Proteome_$i.output hsp70ResultsFinal/
+
+      mcrAmatches=$(cat ./mcrAgeneResultsFinal/mcrAgeneProteome_$i.output | grep -E "WP*" | wc -l)
+      hsp70matches=$(cat ./hsp70ResultsFinal/hsp70Proteome_$i.output | grep -E "WP*" | wc -l)
+      #echo mcrAgeneProteome_$i.output has $mcrAmatches mcrA matches and $hsp70matches hsp70 matches.
+      echo "mcrAgeneProteome_$i.output |  $mcrAmatches                   |  $hsp70matches                    |" >> table.txt	
+  done
+  echo "*****************Results located in table.txt.********************"
+}
 
 
 # Set default values
@@ -22,11 +67,14 @@ while getopts "hm" opt; do
     h)
       show_usage
       ;;
-    m)
-      gene="mcrA"
+    a)
+      align_func
       ;;
-    hsp70)
-      gene="hsp70"
+    m)
+      muscle_func
+      ;;
+    b)
+      build_func
       ;;
     \?)
       echo "Invalid option: -$OPTARG"
@@ -35,7 +83,7 @@ while getopts "hm" opt; do
   esac
 done
 
-
+``
 # Before we even use muscle, we combine all the hsp70 and mcrA reference sequences into one file
 cat ref_sequences/mcrAgene_* > combined_mcrAgene.fasta
 cat ref_sequences/hsp70gene_* > combined_hsp70gene.fasta
@@ -65,8 +113,8 @@ fi
 
 # Initialize Table
 
-echo "Proteome Name              |  mcrA Gene Matches   |  hsp70 Gene Matches   |" 
-echo "----------------------------------------------------------------------------"
+echo "Proteome Name              |  mcrA Gene Matches   |  hsp70 Gene Matches   |" >> table.txt 
+echo "----------------------------------------------------------------------------" >> table.txt
 
 
 # for loop that does hmmsearch for both mcrA and hsp70
@@ -83,6 +131,7 @@ for i in {01..50}; do
 	mcrAmatches=$(cat ./mcrAgeneResultsFinal/mcrAgeneProteome_$i.output | grep -E "WP*" | wc -l)
 	hsp70matches=$(cat ./hsp70ResultsFinal/hsp70Proteome_$i.output | grep -E "WP*" | wc -l)
 	#echo mcrAgeneProteome_$i.output has $mcrAmatches mcrA matches and $hsp70matches hsp70 matches.
-	echo "mcrAgeneProteome_$i.output |  $mcrAmatches                   |  $hsp70matches                    |"	
+	echo "mcrAgeneProteome_$i.output |  $mcrAmatches                   |  $hsp70matches                    |" >> table.txt	
 done
 
+echo "*****************Results located in table.txt.********************"
