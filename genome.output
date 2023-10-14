@@ -1,0 +1,53 @@
+#                                                                     --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name          accession  query name               accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#  ------------------- ----------     -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+sp|P0CW12.1|DNAK_METMZ -          combined_refseqs_aligned -             1e-300  989.5  21.3  1.3e-300  989.2  21.3   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|P0CW13.1|DNAK_METMA -          combined_refseqs_aligned -             1e-300  989.5  21.3  1.3e-300  989.2  21.3   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|Q465Y6.1|DNAK_METBF -          combined_refseqs_aligned -           1.2e-298  982.7  21.8  1.4e-298  982.4  21.8   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|Q9UXR0.1|DNAK_METTE -          combined_refseqs_aligned -           3.2e-298  981.3  18.8  3.6e-298  981.1  18.8   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|Q9UXR0.1|DNAK_METTE -          combined_refseqs_aligned -           3.2e-298  981.3  18.8  3.6e-298  981.1  18.8   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|Q8TQR2.1|DNAK_METAC -          combined_refseqs_aligned -           3.5e-297  977.8  21.2  4.4e-297  977.5  21.2   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|Q9HHB9.1|DNAK_HALMT -          combined_refseqs_aligned -           8.3e-293  963.4  23.9  9.9e-293  963.1  23.9   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|Q3IUI0.1|DNAK_NATPD -          combined_refseqs_aligned -           2.2e-292  962.0  25.6  2.7e-292  961.7  25.6   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|Q01100.2|DNAK_HALMA -          combined_refseqs_aligned -           1.1e-291  959.7  30.5  1.2e-291  959.5  30.5   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|A0B747.1|DNAK_METTP -          combined_refseqs_aligned -           7.7e-291  956.9  16.4  9.5e-291  956.6  16.4   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|B9LUC7.1|DNAK_HALLT -          combined_refseqs_aligned -           1.1e-290  956.4  28.6  1.3e-290  956.1  28.6   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|Q18GZ4.1|DNAK_HALWD -          combined_refseqs_aligned -           1.5e-289  952.6  28.2  1.8e-289  952.4  28.2   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|Q0W874.1|DNAK_METAR -          combined_refseqs_aligned -           1.6e-287  945.9  26.4  1.7e-287  945.8  26.4   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|B0R3H4.1|DNAK_HALS3 -          combined_refseqs_aligned -           4.1e-287  944.5  30.3  4.6e-287  944.4  30.3   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|Q9HRY2.1|DNAK_HALSA -          combined_refseqs_aligned -           4.1e-287  944.5  30.3  4.6e-287  944.4  30.3   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|Q6L0S7.1|DNAK_PICTO -          combined_refseqs_aligned -           1.5e-285  939.4  17.3  1.7e-285  939.2  17.3   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|Q12WE6.1|DNAK_METBU -          combined_refseqs_aligned -           6.6e-285  937.3  19.6  7.4e-285  937.1  19.6   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|O27351.1|DNAK_METTH -          combined_refseqs_aligned -           3.1e-281  925.2  18.6  3.4e-281  925.0  18.6   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|P50023.2|DNAK_THEAC -          combined_refseqs_aligned -           4.8e-280  921.2  19.8  5.4e-280  921.0  19.8   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|Q97BG8.1|DNAK_THEVO -          combined_refseqs_aligned -           9.3e-275  903.7  20.9    1e-274  903.6  20.9   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|A0RZ01.1|DNAK_CENSY -          combined_refseqs_aligned -           1.3e-273  900.0  19.4  1.6e-273  899.7  19.4   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+sp|A9A135.1|DNAK_NITMS -          combined_refseqs_aligned -             5e-272  894.7  26.6  5.9e-272  894.5  26.6   1.0   1   0   0   1   1   1   1 RecName: Full=Chaperone protein DnaK; AltName: Full=HSP
+AKB30557.1             -          combined_refseqs_aligned -           5.2e-131  428.9   0.0     1e-52  170.4   0.0   3.1   1   1   2   3   3   3   3 Methyl coenzyme M reductase alpha subunit [Methanosarcina siciliae T4/M]
+AKB63269.1             -          combined_refseqs_aligned -           1.5e-130  427.4   0.0     8e-53  170.7   0.0   3.1   1   1   2   3   3   3   3 Methyl coenzyme M reductase alpha subunit [Methanosarcina mazei S-6]
+AKB76567.1             -          combined_refseqs_aligned -           3.2e-130  426.3   0.0   3.3e-90  294.2   0.0   3.1   1   1   1   2   2   2   2 Methyl coenzyme M reductase alpha subunit [Methanosarcina horonobensis HB-1 = JCM 15518]
+AKB53099.1             -          combined_refseqs_aligned -           5.9e-130  425.5   0.0   1.2e-51  166.8   0.0   3.1   1   1   2   3   3   3   3 Methyl coenzyme M reductase alpha subunit [Methanosarcina barkeri MS]
+AAZ69867.1             -          combined_refseqs_aligned -           7.5e-130  425.1   0.0   3.7e-51  165.2   0.0   3.1   1   1   2   3   3   3   3 methyl-coenzyme M reductase, alpha subunit [Methanosarcina barkeri str. Fusaro]
+AKB16955.1             -          combined_refseqs_aligned -             4e-125  409.5   0.0   4.1e-87  283.9   0.0   3.1   1   1   1   2   2   2   2 Methyl coenzyme M reductase alpha subunit [Methanosarcina sp. WWM596]
+AEH60719.1             -          combined_refseqs_aligned -           4.4e-124  406.0   0.0   3.8e-49  158.5   0.0   3.1   1   1   2   3   3   3   3 methyl-coenzyme M reductase, alpha subunit [Methanosalsum zhilinae DSM 4017]
+ADE36137.1             -          combined_refseqs_aligned -           1.9e-122  400.6   0.0   2.9e-87  284.4   0.0   3.1   1   1   1   2   2   2   2 methyl-coenzyme M reductase, alpha subunit [Methanohalophilus mahii DSM 5219]
+AEF96774.1             -          combined_refseqs_aligned -           9.5e-122  398.3   0.0   2.5e-80  261.5   0.0   3.1   1   1   1   2   2   2   2 methyl-coenzyme M reductase, alpha subunit [Methanotorris igneus Kol 5]
+ADC69992.1             -          combined_refseqs_aligned -           1.6e-119  391.0   0.0   1.4e-42  136.8   0.0   3.1   1   1   2   3   3   3   3 methyl-coenzyme M reductase, alpha subunit [Methanocaldococcus sp. FS406-22]
+ADC69992.1             -          combined_refseqs_aligned -           1.6e-119  391.0   0.0   1.4e-42  136.8   0.0   3.1   1   1   2   3   3   3   3 methyl-coenzyme M reductase, alpha subunit [Methanocaldococcus sp. FS406-22]
+CCJ36661.1             -          combined_refseqs_aligned -           9.8e-116  378.5   0.0   1.6e-75  245.6   0.0   3.1   1   1   1   2   2   2   2 methyl-coenzyme M reductase alpha subunit [Methanoculleus bourgensis MS2]
+AEB67565.1             -          combined_refseqs_aligned -           1.3e-114  374.7   0.0   3.5e-40  128.9   0.0   3.1   1   1   2   3   3   3   3 methyl-coenzyme M reductase, alpha subunit [Methanothrix soehngenii GP6]
+CDG65773.1             -          combined_refseqs_aligned -           2.2e-114  374.0   0.0     1e-73  239.7   0.0   3.1   1   1   1   2   2   2   2 Methyl-coenzyme M reductase subunit alpha [Methanobacterium sp. MB1]
+AGN17395.1             -          combined_refseqs_aligned -           1.2e-113  371.6   0.0     5e-41  131.7   0.0   3.1   1   1   2   3   3   3   3 methyl-coenzyme M reductase alpha subunit McrA [Methanobrevibacter sp. AbM4]
+ALT69783.1             -          combined_refseqs_aligned -           5.7e-113  369.3   0.0   7.2e-74  240.2   0.0   3.1   1   1   1   2   2   2   2 methyl-coenzyme M reductase alpha subunit McrA [Methanobrevibacter millerae]
+CDG65904.1             -          combined_refseqs_aligned -           1.1e-110  361.8   0.0   1.5e-38  123.6   0.0   3.2   1   1   2   3   3   3   3 Methyl-coenzyme M reductase II subunit alpha [Methanobacterium sp. MB1]
+AGI47474.1             -          combined_refseqs_aligned -             1e-103  338.8   0.0   6.6e-65  210.6   0.0   3.8   1   1   1   2   2   2   2 methyl-coenzyme M reductase, alpha subunit [Thermoplasmatales archaeon BRNA1]
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      refseq.hmm
+# Target file:     combined_refsequences.fasta
+# Option settings: /afs/crc.nd.edu/user/m/meleazar/Private/Biocomputing/tools/hmmsearch --tblout genome.output refseq.hmm combined_refsequences.fasta 
+# Current dir:     /afs/crc.nd.edu/user/m/meleazar/Private/Biocomputing/BioinformaticsProject
+# Date:            Wed Oct 11 21:02:50 2023
+# [ok]
